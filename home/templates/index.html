@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      {%for post in posts %}
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img
+            src="{{post.image.url}}"
+            class="card-img-top"
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <div class="card-text">
+              <div class="col-md-8">
+                <div class="col-12"><h4>{{post.title}}</h4></div>
+                <div class="col-12">{{post.content}}</div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a
+                  href="{{post.get_absolute_url}}"
+                  type="button"
+                  class="btn btn-sm btn-outline-secondary"
+                >
+                  View
+                </a>
+                <button type="button" class="btn btn-sm btn-outline-secondary">
+                  Edit
+                </button>
+              </div>
+              <small class="text-muted">9 mins</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
