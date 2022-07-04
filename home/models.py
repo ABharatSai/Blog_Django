@@ -1,6 +1,4 @@
 from distutils.command.upload import upload
-from random import choices
-from time import timezone
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse

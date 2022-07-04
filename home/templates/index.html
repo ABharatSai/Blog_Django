@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       {%for post in posts %}
-      <div class="col-md-4">
+      <div class="col-md-5">
         <div class="card mb-4 box-shadow">
           <img
             src="{{post.image.url}}"
@@ -14,7 +14,7 @@
             <div class="card-text">
               <div class="col-md-8">
                 <div class="col-12"><h4>{{post.title}}</h4></div>
-                <div class="col-12">{{post.content}}</div>
+                <div class="col-12">Author :- {{post.author}}</div>
               </div>
             </div>
             <div class="d-flex justify-content-between align-items-center">
@@ -30,7 +30,9 @@
                   Edit
                 </button>
               </div>
-              <small class="text-muted">9 mins</small>
+              <small class="text-muted"
+                ><div align="right">{{post.date}}</div></small
+              >
             </div>
           </div>
         </div>
