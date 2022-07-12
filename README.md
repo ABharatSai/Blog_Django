@@ -9,13 +9,15 @@ This Blog is a simple Project using the available django models and admin interf
     <li>Python</li>
     <li>Django</li>
     <li>Bootstrap</li>
-    <li>JavaScript</li>
+    <li>Heroku</li>
 </ul>
 <h2>Additional Python Modules Required:</h2>
 <ul>
     <li>Django</li>
     <li>django-froala-editor</li>
     <li>Pillow</li>
+    <li>Gunicorn</li>
+    <li>Whitenoise</li>
 </ul>
 
 <h2>Usage :</h2>
