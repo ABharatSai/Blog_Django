@@ -1,7 +1,10 @@
 from distutils.command.upload import upload
+from random import choices
+from time import timezone
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
+from froala_editor.fields import FroalaField
 
 # Create your models here.
 
@@ -27,7 +30,7 @@ class Post(models.Model):
     date = models.DateTimeField(auto_now_add=True, blank=True)
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='blog_posts')
-    content = models.TextField()
+    content = FroalaField()
     status = models.CharField(max_length=10, choices=choice, default='draft')
     objects = models.Manager()
     newmanager = NewManager()  # for published change in views

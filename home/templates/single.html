@@ -1,11 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="container pt-5">
-  <h3 align="center">{{singledata.title}}</h3>
-  <small class="text-muted"
-    ><div align="center">-{{singledata.author}}</div></small
-  >
-  <div align="center">{{singledata.content}}</div>
+  <h1 align="center">{{singledata.title}}</h1>
+
+  <div align="center">{{ singledata.content|safe }}</div>
 </div>
 
 {% endblock content %}

@@ -3,7 +3,7 @@
   <div class="container">
     <div class="row">
       {%for post in posts %}
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div class="card mb-4 box-shadow">
           <img
             src="{{post.image.url}}"
@@ -26,13 +26,8 @@
                 >
                   View
                 </a>
-                <button type="button" class="btn btn-sm btn-outline-secondary">
-                  Edit
-                </button>
               </div>
-              <small class="text-muted"
-                ><div align="right">{{post.date}}</div></small
-              >
+              <small class="text-muted">9 mins</small>
             </div>
           </div>
         </div>
