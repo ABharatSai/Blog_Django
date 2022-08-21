@@ -1,4 +1,4 @@
-# Blog_Django
+# Blog_Django ![Status finished](https://img.shields.io/badge/Status-finished-2eb3c1.svg) ![Django 4.0.6](https://img.shields.io/badge/Django-4.0.6-green.svg) ![Python 3.10.4](https://img.shields.io/badge/Python-3.10.4-blue.svg) ![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)
 
 This Blog is a simple Project using the available django models and admin interface with the help of the froala editor
 
